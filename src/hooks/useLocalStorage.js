@@ -1,11 +1,11 @@
 export const useLocalStorage = () => {
   const token = localStorage.getItem('token') || null
 
-  function setToken(token) {
+  const setToken = (token) => {
     localStorage.setItem('token', token)
   }
 
-  function logout() {
+  const logout =() => {
     localStorage.removeItem('token')
   }
 

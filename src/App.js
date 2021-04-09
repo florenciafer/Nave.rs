@@ -1,5 +1,3 @@
-
-
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from './page/Home';
 import Login from './page/Login';

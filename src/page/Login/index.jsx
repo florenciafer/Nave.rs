@@ -1,7 +1,8 @@
 import {useState, useEffect} from 'react'
 import { requestNavers } from '../../service/UseLogin';
 import { useHistory } from "react-router-dom";
-import { useLocalStorage } from "../../hooks/useLocalStorage"
+import { useLocalStorage } from "../../hooks/useLocalStorage";
+
 
 
 const Login = () => {
@@ -40,7 +41,7 @@ const Login = () => {
     }
     }, [token])//viendo si cambia el token  si no paso valor el use efect solo se ejecuta una vez cuando  es null 
     return (
-        <div>
+        <div className="login-container">
             <div>
                 <img src="" alt="" />
             </div>

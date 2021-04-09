@@ -11,14 +11,11 @@ const Home = () => {
     logout(token) 
       history.push(`/`);
     }
-
-   
-    
-    return (
+     return (
         <div>
               <div>
                 <div>
-            <img src="" alt="" srcset=""/>
+            <img src="" alt="logo"/>
                 </div>
                 <div>
                 <button onClick={handleRemoveToken} type="submit">Sair</button>

@@ -8,7 +8,7 @@ export const requestNavers = async (userEmail, password) => {
    response = await axios.post("https://navedex-api.herokuapp.com/v1/users/login",{
     
       "email": userEmail,//DESDE ACA ENVIO LA INFORMACION DE MI INPUT
-      "password": password
+      "password": password//desde aca envio  la info a mi input y lo compara con la informacion que viene de axios 
    })
      return response
    /* headers: *//* {Authorization:"Bearer " + TOKEN }}) */
