@@ -1,12 +1,11 @@
 import {useState, useEffect} from 'react'
-import { requestNavers } from '../../service/Useget';
+import { requestNavers } from '../../service/UseLogin';
 import { useHistory } from "react-router-dom";
-import Home from "../Home";
 import { useLocalStorage } from "../../hooks/useLocalStorage"
 
 
 const Login = () => {
-    const { token, setToken } = useLocalStorage()
+    const { token, setToken } = useLocalStorage();
     const [userEmail, setuserEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, seterror] = useState("");
@@ -36,10 +35,16 @@ const Login = () => {
     useEffect(() => {
     if(token){
         history.push(`/home`);
+    }else{
+        history.push('/');
     }
     }, [token])//viendo si cambia el token  si no paso valor el use efect solo se ejecuta una vez cuando  es null 
     return (
-        <form onSubmit={handleSubmit}>
+        <div>
+            <div>
+                <img src="" alt="" />
+            </div>
+       <form onSubmit={handleSubmit}>
             <div>
                 <label>E-mail</label>
             <input type="text"
@@ -62,6 +67,8 @@ const Login = () => {
            <button type="submit">Entrar</button>
            {error && error}
         </form>
+        </div>
+       
     )
 }
 
