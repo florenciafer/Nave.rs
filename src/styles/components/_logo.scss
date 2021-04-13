@@ -2,15 +2,14 @@
     display: flex;
     flex-direction: column;
     justify-items: center;
-    padding: 32px;
-    margin-top: 21vh;
-    @media (min-width:768px){
-        margin-left: 4rem;
-      }
-      @media (min-width:1440px){
-        margin-left: 13rem;
-      }
-    
+    /* ALIGN-CONTENT: CENTER; */
+    width: 100%;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    /* padding: 32px; */
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 .login-card{
     display: flex;
