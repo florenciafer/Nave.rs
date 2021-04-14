@@ -1,30 +1,65 @@
-import React from 'react'
-import { AiFillEdit, AiFillDelete } from 'react-icons/ai';
-import { useLocalStorage } from '../../hooks/useLocalStorage';
+import moment from "moment";
+import React from "react";
+import { useHistory } from "react-router";
+import { MdDelete,MdEdit } from "react-icons/md";
 
 
-const NaverModal = ({id,setData,name,job_role,url,birthdate,admission_date,project,deleteNaver}) => {
-    const { token } = useLocalStorage();
-    return (
-        <div className="container-modal">
+const NaverModal = ({
+  id,
+  name,
+  job_role,
+  url,
+  birthdate,
+  admission_date,
+  project,
+  confirmDelete,
+  setmodalIsOpen
+}) => {
+ 
+  const history = useHistory();
+  const calcYears = (date) => {
+    return moment().year() - moment(date).year();
+  };
+  console.log(birthdate);
+  const age = calcYears(birthdate);
+  const admission = calcYears(admission_date);
+
+  return (
+    <div className="container-modal">
+            <button className="close-modal" onClick={() => setmodalIsOpen(false)}>x</button>
+      <div>
+        <img className="card-img" src={url} alt="Ilustracao" />
+      </div>
+      <div className="container-info-modal">
+
         <div>
-    <img className="img-naver" src={url} alt="Ilustracao"/>
-    </div>
-    <div>
-        <h1>{name}</h1>
-    </div>
-    <div>
-        <p>{job_role}</p>
-        <h3>idade</h3>
-        <p>{birthdate}</p>
-        <h3>Tempo de empresa</h3>
-        <p>{admission_date}</p>
-        <h3>Proyecto que Participou</h3>
-        <p>{project}</p>
-    </div>
-    <span><button  onClick={()=> deleteNaver(id,setData,token)}><AiFillDelete/></button></span><span><button><AiFillEdit/></button></span>
+          <h1 className="card-name">{name}</h1>
         </div>
-    )
-}
+        <div>
+          <p className="card-job">{job_role}</p>
+          <h3 className="card-info-modal">idade</h3>
+          <p>{age} anos</p>
+          <h3 className="card-info-modal">Tempo de empresa</h3>
+          <p>{admission} anos</p>
+          <h3 className="card-info-modal">Proyecto que Participou</h3>
+          <p>{project}</p>
+        </div>
+        <div className="container-btn-modal">
+          <span className="btn-modal">
+        <button className="btn-naver" onClick={() => confirmDelete()}>
+          <MdDelete className="icon-naver" />
+        </button>
+      </span>
+      <span  className="btn-modal">
+        <button className="btn-naver" onClick={() => history.push(`/home/edit/${id}`)}>
+          <MdEdit className="icon-naver" />
+        </button>
+      </span>
+        </div>
+       
+      </div>
+    </div>
+  );
+};
 
-export default NaverModal
+export default NaverModal;

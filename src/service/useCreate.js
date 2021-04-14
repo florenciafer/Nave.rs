@@ -3,18 +3,18 @@ import axios from "axios";
 export const useCreate = () => {
   //put actualizar
   //post para crear
-  const createUser = ( token) => {
+  const createUser = (token,job_role,admissionDate,birthdate,name,proyect,url) => {
     axios({
       url: ` https://navedex-api.herokuapp.com/v1/navers`,
       method: "POST",
       headers: { Authorization: "Bearer " + token },
       data: {
-        job_role: "Desenvolvedor",
-        admission_date: "19/08/2018",
-        birthdate: "12/04/1992",
-        project: "Project Backend Test",
-        name: "Florencia Fernandez",
-        url: "https://vejasp.abril.com.br/wp-content/uploads/2020/05/Foto-Sarah-Becker-1.jpg.jpg",
+        job_role:job_role,
+        admission_date: admissionDate,
+        birthdate: birthdate,
+        name: name,
+        project: proyect,
+        url: url,
       },
     }).then((response)=>{
        console.log(response)

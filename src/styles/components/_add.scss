@@ -1,0 +1,47 @@
+.container-add{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 48px;
+    margin: 1rem;
+    color: #212121;
+}
+    .title-add{
+        height: 48px;
+width: 141px;
+left: 32px;
+top: 125px;
+//styleName: Título 2;
+font-family: Montserrat;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: 48px;
+letter-spacing: 0em;
+text-align: left;
+
+
+    }
+    
+ .link-add{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    
+    
+    height: 24px;
+    border-radius: nullpx;
+    font-size: 14px;
+    line-height: 24px;
+    color: white;
+    height: 41px;
+    width: 27.5vh;
+ background: #212121;
+ border: none;
+}
+ 

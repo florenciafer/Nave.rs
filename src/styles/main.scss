@@ -1,5 +1,10 @@
 @import "./base/reset";
 @import "./utils/fonts";
 
+@import "./components/home";
 @import "./components/logo";
-@import "./components/singout";
+@import "./components/header.scss";
+@import "./components/containerNaver";
+@import "./components/add";
+@import "./components/modal";
+@import "./components/edit";

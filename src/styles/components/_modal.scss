@@ -1,0 +1,168 @@
+.container-modal{
+    display: flex;
+    background: #FFFFFF;
+    overflow: auto;
+    @media (max-width:600px){
+        display: flex;
+        flex-direction: column;
+        height: 34em;
+    }
+    @media (max-width:425px){
+      display: flex;
+      flex-direction: column;
+  }
+  @media (max-width:320px){
+      display: flex;
+      flex-direction: column;
+      
+  }
+}
+.container-info-modal{
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    width: 50%;
+}
+.card-info-modal{
+    margin: 0.5em 0;
+font-family: Montserrat;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+color:#212121;
+
+}
+.close-modal{
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 2%;
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    z-index: 4;
+    position: absolute;
+    border: none;
+    background: none;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 600;
+    background: none;
+    @media (min-width:1400px){
+        right: 25%;
+    }
+    @media (min-width:1400px){
+        right: 25%;
+    }
+    @media (min-width:1400px){
+        right: 25%;
+    }
+    @media (min-width:768px){
+        right: 25%;
+
+    }
+}
+.container-btn-modal{
+    display: flex;
+    margin-top:1em;
+}
+.btn-modal{
+    display: flex;
+    flex-direction: row;
+}
+.ReactModal__Content--after-open{
+    background: none;
+border: none;
+display: flex;
+flex-direction: column;
+justify-items: center;
+/* ALIGN-CONTENT: CENTER; */
+width: 100%;
+justify-content: center;
+min-height: 100vh;
+align-items: center;
+background: rgba(0, 0, 0, 0.5);
+}
+.ReactModal__Content--after-open{
+    background: rgba(0, 0, 0, 0.5);
+
+}
+.ReactModal__Overlay--after-open{
+    background: rgba(0, 0, 0, 0.5);
+}
+.container-confirm{
+  display: flex;
+    flex-direction: column;
+    height: 13rem;
+    background: #FFFFFF;
+    border:1px solid #212121 ;
+    width: 43%;
+    padding: 1em 2.3em;
+    @media (max-width:600px){
+        display: flex;
+        flex-direction: column;
+        height: 19em;
+    }
+}
+.title-confirm{
+    font-family: Montserrat;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 36px;
+letter-spacing: 0em;
+text-align: left;
+margin-top: 1rem;
+color: #212121;
+
+}
+.btn-confirm-cancelar{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    margin-right: 1em;
+    height: 24px;
+    border-radius: nullpx;
+    font-size: 14px;
+    line-height: 24px;
+    color: #212121;
+    height: 41px;
+    width: 27.5vh;
+ background:  #FFFFFF;
+ border:1px solid #212121 ;
+
+}
+.alert-confirm{
+    font-family: Montserrat;
+    padding: 0.5rem 0;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 36px;
+letter-spacing: 0em;
+text-align: left;
+font-size: 16px;
+line-height: 36px;
+}
+.btn-confirm{
+    display: flex;
+}
+.container-btnsubsets{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+   
+}
+.close-subsets{
+    width: 14px;
+    height: 14px;
+    border: none;
+    background: none;
+    color: #212121;
+    font-size: 14px;
+}
