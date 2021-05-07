@@ -16,23 +16,28 @@ const Login = () => {
         event.preventDefault();
         try{
             //intenta 
-            const response = await  requestNavers(userEmail,password);
+            if(userEmail === "" || password === ""){
+                return seterror("falta llenar campos")
+            }else{
+                const response = await  requestNavers(userEmail,password);
             
            
-            //aca usar el localsotrage y guardar el token //
-            if(response.status === 200){
-              setToken(response.data.token)
-              history.push(`/home`);
-            } else{
-                seterror("Datos Incorrectos");
-            }
+                //aca usar el localsotrage y guardar el token //
+                if(response.status === 200){
+                  setToken(response.data.token)
+                  history.push(`/home`);
+                } else{
+                    seterror("Datos Incorrectos");
+                }
+               
+             /*    const token =localStorage.getItem("token"); */
+            } 
            
-         /*    const token =localStorage.getItem("token"); */
-        } 
-        catch(e){
-            seterror("Error en el servidor");
-            console.log(e)
-        }
+            }
+            catch(e){
+                seterror("Error en el servidor");
+                console.log(e)
+            }
     }
     useEffect(() => {
     if(token){
@@ -55,6 +60,7 @@ const Login = () => {
                name="userEmail"
                placeholder="E-mail"
                onChange={({target})=>setuserEmail(target.value)}  //obtener nombre email
+               required
             />
             </div>
           <div>
@@ -64,6 +70,7 @@ const Login = () => {
                name="Password"
                placeholder="Senha"
                onChange={({target})=>setPassword(target.value)}  //obtener nombre del usuario 
+               required
             />
           </div>
             
