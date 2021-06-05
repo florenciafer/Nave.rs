@@ -1,6 +1,7 @@
 .container-modal{
     display: flex;
     background: #FFFFFF;
+    
     overflow: auto;
     @media (max-width:600px){
         display: flex;
@@ -51,7 +52,8 @@ color:#212121;
     font-size: 16px;
     font-weight: 600;
     background: none;
-    @media (min-width:1400px){
+    cursor: pointer;
+    /* @media (min-width:1400px){
         right: 25%;
     }
     @media (min-width:1400px){
@@ -63,7 +65,7 @@ color:#212121;
     @media (min-width:768px){
         right: 25%;
 
-    }
+    } */
 }
 .container-btn-modal{
     display: flex;
@@ -72,6 +74,7 @@ color:#212121;
 .btn-modal{
     display: flex;
     flex-direction: row;
+    cursor: pointer
 }
 .ReactModal__Content--after-open{
     background: none;
@@ -134,6 +137,7 @@ color: #212121;
     width: 27.5vh;
  background:  #FFFFFF;
  border:1px solid #212121 ;
+ cursor: pointer
 
 }
 .alert-confirm{
@@ -150,6 +154,7 @@ line-height: 36px;
 }
 .btn-confirm{
     display: flex;
+    cursor: pointer
 }
 .container-btnsubsets{
     display: flex;
@@ -165,4 +170,5 @@ line-height: 36px;
     background: none;
     color: #212121;
     font-size: 14px;
+    cursor: pointer;
 }

@@ -1,44 +1,41 @@
-.container-header{
-    display: flex;
-    align-items: center;
+.container-header {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 48px;
-    margin: 1rem;
-    /* identical to box height, or 120% */
-    
-    
-    
-    color: #212121;
-    
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+  margin: 1rem;
+  /* identical to box height, or 120% */
+
+  color: #212121;
 }
-.logo-header{
-    max-width: 200px;
+.logo-header {
+  max-width: 200px;
 }
-.btn-header{
- 
-background: none;
-border: none;
- width: 28px;
-height: 24px;
-left: 1220px;
-top: 30px;
+.btn-header {
+  cursor: pointer;
+  background: none;
+  border: none;
+  width: 28px;
+  height: 24px;
+  left: 1220px;
+  top: 30px;
 
-/* Botão */
+  /* Botão */
 
-font-family: Montserrat;
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
-line-height: 24px;
-/* identical to box height, or 171% */
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
 
-display: flex;
-align-items: center;
-text-align: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
 
-color: #000000;
+  color: #000000;
 }

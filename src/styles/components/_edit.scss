@@ -1,6 +1,7 @@
 .navbar-Edit{
     display: flex;
     margin: 2.5em 2em;
+    cursor: pointer;
 }
 .title-forms{
     font-family: Montserrat;
@@ -19,6 +20,7 @@ color: #212121;
     font-size: 14px;
     margin-right: 1rem;
     background: none;
+    cursor: pointer;
 }
 .edit-form{
     display: grid;
@@ -29,6 +31,7 @@ color: #212121;
       ". ."
       ". ."
       ". .";
+      cursor: pointer;
       @media (max-width:600px){
           display: flex;
           flex-direction: column;
@@ -56,6 +59,7 @@ color: #212121;
     width: 50%;
     align-items: flex-start;
     margin: 0rem 4rem;
+    cursor: pointer;
 }
 .edit-input{
     display: flex;
@@ -67,6 +71,7 @@ color: #212121;
     border: 1px solid #424242;
     box-sizing: border-box;
     padding-left: 1em;
+    cursor: pointer;
 }
 
 .container-btn-submit{
@@ -74,6 +79,7 @@ color: #212121;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+    cursor: pointer;
 }
 .btn-edit{
     font-family: Montserrat;
@@ -90,5 +96,5 @@ color: #212121;
     margin-right: -65%;
     background: #212121;
     color: #FFFFFF;
-
+    cursor: pointer
 }

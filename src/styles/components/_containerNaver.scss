@@ -1,23 +1,22 @@
 .container-Navers{
     display: flex;
+    width: 281px;
+    height: 420px;
     @media (max-width:600px){
         display: flex;
         flex-direction: column;
+        justify-items: center;
+        width: 100%;
+        align-items: center;
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
-    @media (max-width:425px){
-      display: flex;
-      flex-direction: column;
-  }
-  @media (max-width:320px){
-      display: flex;
-      flex-direction: column;
-  }
+   
 }
 .container-card{
     margin: 1rem;
-
-    width: 281px;
-height: 420px;
+    cursor: pointer;
+ 
 left: 32px;
 top: 193px;
 
@@ -25,6 +24,7 @@ top: 193px;
 .container-card:hover {
     transform: scale(1.05);
     transition: 1s; }
+    
     
 .card-img{
    width: 100%;
@@ -64,9 +64,11 @@ margin:0.5em 0em;
     text-decoration: none;
     border: none;
      background: none;
+     cursor: pointer;
     
 }
 .icon-naver{
     color:  #212121;
     font-weight: 900;
+    cursor: pointer;
 }

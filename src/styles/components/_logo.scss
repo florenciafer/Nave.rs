@@ -42,6 +42,7 @@
     border: 1px solid #424242;
     box-sizing: border-box;
     padding-left: 1em;
+    cursor: pointer;
 }
 .login-input::placeholder{
     color:#9E9E9E;
@@ -51,6 +52,7 @@
 }
 .btn-submit{
     //styleName: Botão;
+    cursor: pointer;
     font-family: Montserrat;
     font-size: 14px;
     font-style: normal;
