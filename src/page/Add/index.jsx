@@ -8,6 +8,7 @@ import Header from "../../components/Header";
 
 const Add = () => {
   const { token } = useLocalStorage();
+  const history = useHistory();
   const { createUser } = useCreate();
   const [error, seterror] = useState("");
   const [editform, seteditform] = useState({
@@ -23,13 +24,15 @@ const Add = () => {
   };
 
   const { name, admissionDate, birthdate, job_role, proyect, url } = editform;
-  const history = useHistory();
+  
 
   const confirmAdd = async () => {
     await modalSubsets({
       title: "Naver Criado",
       confirmation: "Naver Criado com Sucesso",
+      
     });
+    history.push("/home");
   };
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -43,13 +46,14 @@ const Add = () => {
       confirmAdd();
     } catch (e) {
       seterror("Error en el servidor");
-      console.log(e);
+      console.log(error);
     }
   };
   return (
-    <div className="edit-container">
+    <div >
          <Header></Header>
-      <div className="navbar-Edit">
+         <div className="edit-container">
+         <div className="navbar-Edit">
         <button className="arrowform" onClick={() => history.push(`/home`)}>
           <IoIosArrowBack />
         </button>
@@ -127,6 +131,8 @@ const Add = () => {
       </div>
       </form>
       
+         </div>
+     
     </div>
   );
 };

@@ -1,7 +1,10 @@
 .container-modal{
     display: flex;
     background: #FFFFFF;
-    
+    position: relative;
+    height: 72vh ;
+    width: 71vw;
+    object-fit: contain;
     overflow: auto;
     @media (max-width:600px){
         display: flex;
@@ -21,11 +24,11 @@
 .container-info-modal{
     display: flex;
     flex-direction: column;
-    margin: 1em;
+    margin: 1em 1em 6em 3em;
     width: 50%;
 }
 .card-info-modal{
-    margin: 0.5em 0;
+    margin: 1.2em 0;
 font-family: Montserrat;
 font-size: 16px;
 font-style: normal;
@@ -38,34 +41,19 @@ color:#212121;
 }
 .close-modal{
      display: flex;
-    align-items: center;
-    justify-content: center;
-    right: 2%;
-    width: 32px;
-    height: 32px;
-    background-color: #fff;
+      flex-direction: row-reverse;
+     background-color: #fff;
+    width: 100%;
     z-index: 4;
+    margin: 1px 0 1px -16px;
     position: absolute;
     border: none;
     background: none;
     color: #212121;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 600;
     background: none;
-    cursor: pointer;
-    /* @media (min-width:1400px){
-        right: 25%;
-    }
-    @media (min-width:1400px){
-        right: 25%;
-    }
-    @media (min-width:1400px){
-        right: 25%;
-    }
-    @media (min-width:768px){
-        right: 25%;
-
-    } */
+    cursor: pointer; 
 }
 .container-btn-modal{
     display: flex;
